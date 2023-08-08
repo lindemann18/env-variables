@@ -6,7 +6,7 @@ on:
       - dev
 env: # having the value at this level makes them available for all jobs (except when one overwrites it)
   MONGODB_DB_NAME: gha-demo
-  jobs:
+jobs:
   test:
     env: #when defined here is only available for this job and not others
     MONGODB_CLUSTER_ADDRESS: cluster0.bcton8n.mongodb.net
