@@ -12,6 +12,7 @@ jobs:
       MONGODB_CLUSTER_ADDRESS: cluster0.bcton8n.mongodb.net
       #MONGODB_USERNAME: chuvakovich
       #MONGODB_PASSWORD: JesusIrma123!
+      # when we define an environment such as testing, we're accessing the secrets of the so call env, no the general secrets
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
