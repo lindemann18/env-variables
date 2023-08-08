@@ -29,10 +29,10 @@ env: # having the value at this level makes them available for all jobs (except 
             npm start & npx wait-on http://127.0.0.1:$PORT
             npm test
             echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Output information
-        run: |
-          echo "..."
+    deploy:
+      needs: test
+      runs-on: ubuntu-latest
+      steps:
+        - name: Output information
+          run: |
+            echo "..."
