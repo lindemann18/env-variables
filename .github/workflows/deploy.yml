@@ -9,10 +9,10 @@ env: # having the value at this level makes them available for all jobs (except 
 jobs:
   test:
     env: #when defined here is only available for this job and not others
-    MONGODB_CLUSTER_ADDRESS: cluster0.bcton8n.mongodb.net
-    MONGODB_USERNAME: chuvakovich
-    MONGODB_PASSWORD: JesusIrma123!
-    PORT: 8080
+      MONGODB_CLUSTER_ADDRESS: cluster0.bcton8n.mongodb.net
+      MONGODB_USERNAME: chuvakovich
+      MONGODB_PASSWORD: JesusIrma123!
+      PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
     steps:
